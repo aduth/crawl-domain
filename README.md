@@ -11,10 +11,10 @@ for await (const url of crawl('http://localhost:3000')) {
 	console.log(url);
 }
 
-// → http://localhost:5000/
-// → http://localhost:5000/b
-// → http://localhost:5000/c
-// → http://localhost:5000/d
+// → http://localhost:3000/
+// → http://localhost:3000/b
+// → http://localhost:3000/c
+// → http://localhost:3000/d
 ```
 
 ## Installation
