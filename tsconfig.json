@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"strict": true,
+		"declaration": true,
+		"esModuleInterop": true,
+		"emitDeclarationOnly": true,
+		"outDir": "types"
+	},
+	"include": ["lib/*.js"],
+	"exclude": ["lib/*.test.js"]
+}

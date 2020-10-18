@@ -1,0 +1,58 @@
+{
+	"name": "crawl-domain",
+	"description": "Crawl to discover all paths under a given URL domain",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "lib/crawl.js",
+	"types": "types/crawl.d.ts",
+	"license": "MIT",
+	"engines": {
+		"node": ">=12"
+	},
+	"author": {
+		"name": "Andrew Duthie",
+		"email": "andrew@andrewduthie.com",
+		"url": "https://andrewduthie.com"
+	},
+	"homepage": "https://github.com/aduth/crawl-domain",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aduth/crawl-domain.git"
+	},
+	"bugs": {
+		"url": "https://github.com/aduth/crawl-domain/issues"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test:mocha": "mocha lib/*.test.js",
+		"test:eslint": "eslint .",
+		"test:typescript": "tsc",
+		"test": "run-p test:*",
+		"prepublishOnly": "npm run build"
+	},
+	"files": [
+		"lib/*.js",
+		"types/*.d.ts",
+		"!*.test.js"
+	],
+	"dependencies": {
+		"decompress-response": "^6.0.0",
+		"htmlparser2": "^5.0.0",
+		"http-or-https": "^1.0.2",
+		"parallel-transform": "^1.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^14.11.10",
+		"@types/parallel-transform": "^1.1.0",
+		"chai": "^4.2.0",
+		"eslint": "^7.11.0",
+		"eslint-config-prettier": "^6.13.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"get-port": "^5.1.1",
+		"mocha": "^8.2.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.1.2",
+		"serve-handler": "^6.1.3",
+		"typescript": "^4.0.3"
+	}
+}
