@@ -76,7 +76,7 @@ export function stream(
 	rootURL: string,
 	options?: Partial<CrawlOptions> | undefined,
 	callback?: CrawlCallback | undefined
-): import('stream').Stream;
+): import('stream').Readable;
 
 export const promise: CrawlPromise;
 
